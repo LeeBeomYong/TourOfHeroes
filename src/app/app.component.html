@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<h1>{{title}}</h1>
+<nav>
+   <a md-button routerLink="/dashboard" routerLinkAction="active">Deshboard</a>  
+   <a md-button routerLink="/heroes" routerLinkAction="active">Heroes</a>
+</nav>
+<router-outlet></router-outlet>
+

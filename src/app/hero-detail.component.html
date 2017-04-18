@@ -1,0 +1,15 @@
+<div *ngIf="hero">
+    <h2>{{hero.name}} details!</h2>
+    <div>
+        <label>id: </label>{{hero.id}}
+    </div>
+    <div>
+        <label>name: </label>
+        <md-input-container>
+        <input mdInput #postalCode maxlength="10" [(ngModel)]="hero.name"/>
+        <md-hint align="end">{{postalCode.value.length}} / 10</md-hint>
+        </md-input-container>
+    </div>
+    <button (click)="goBack()">Back</button>
+    <button (click)="save()">Save</button>
+</div>
